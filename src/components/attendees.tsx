@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: mvs(20),
     marginLeft: mvs(16),
+    alignItems:'center'
   },
   avatar: {
     height: mvs(40),

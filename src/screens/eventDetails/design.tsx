@@ -1,5 +1,5 @@
 //import liraries
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import {
   View,
   Text,
@@ -8,6 +8,7 @@ import {
   Pressable,
   ScrollView,
   TouchableOpacity,
+  Linking,
 } from 'react-native';
 import {mvs} from '../../config/metrices';
 import Colors from '../../config/colors';
@@ -27,15 +28,30 @@ import Category from '../../components/category';
 import Organiser from '../../components/organiser';
 import {styles} from './styles';
 import AttendeesCounter from '../../components/attendees';
+//@ts-ignore
+import DateRangePicker from 'react-native-daterange-picker';
+import moment from 'moment';
 
 // create a component
-const EventDetailsDesign = () => {
+const EventDetailsDesign = ({
+  saveEvent,
+  eventData,
+  openLocation,
+  setDates,
+  minDate,
+  maxDate,
+  //dateRange,
+  displayedDate,
+  startDate,
+  endDate,
+}: string | any) => {
   return (
     <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
       <View style={styles.imageContainer}>
         <LinearGradient
           colors={['#131313', '#13131300']}
-          style={styles.linearGrandient}></LinearGradient>
+          style={styles.linearGrandient}
+        ></LinearGradient>
         <Pressable style={styles.back}>
           <BackIcon />
         </Pressable>
@@ -48,38 +64,31 @@ const EventDetailsDesign = () => {
           source={require('../../../assets/images/banner1.png')}
           style={styles.banner}
         />
-        <Tag title={'LIVE EVENT'} color={Colors.tag} style={styles.tag} />
+        <Tag title={eventData?.tag} color={Colors.tag} style={styles.tag} />
       </View>
       <View style={styles.mainContainer}>
         <Tag
           mt={mvs(20)}
-          title={'FROM £ 25.00'}
+          title={`FROM ${eventData?.price}`}
           color={Colors.primary}
           style={styles.price}
         />
-        <Text style={styles.title}>{'Dinner with Fairgrove Partners'}</Text>
-        <Read
-          description={`Join us for an unforgettable evening of fine dining and networking unforgettable evening of fine dining and networking`}
-        />
+        <Text style={styles.title}>{eventData?.title}</Text>
+        <Read description={eventData?.description} />
         <Title mt={mvs(20)} title={'Who’s going'} />
-        <AttendeesCounter images={[
-          {image: 'https://medicosfamilyclinic.com/wp-content/uploads/2020/06/medical-clinic-672x372.jpg'},
-          {image: 'https://medicosfamilyclinic.com/wp-content/uploads/2020/06/medical-clinic-672x372.jpg'},
-          {image: 'https://medicosfamilyclinic.com/wp-content/uploads/2020/06/medical-clinic-672x372.jpg'},
-          {image: 'https://medicosfamilyclinic.com/wp-content/uploads/2020/06/medical-clinic-672x372.jpg'}
-
-        ]}/>
+        <AttendeesCounter images={eventData?.attendees} />
         <Title mt={mvs(20)} title={'Categories'} />
         <ScrollView
           style={styles.categories}
           horizontal
-          showsHorizontalScrollIndicator={false}>
-          <Category title={`🎻  Art & Music`} />
-          <Category title={`⚽️  Sport`} />
-          <Category title={`🎬  Movie`} />
+          showsHorizontalScrollIndicator={false}
+        >
+          <Category title={`🎻  ${eventData.categories[0]}`} />
+          <Category title={`⚽️  ${eventData.categories[1]}`} />
+          <Category title={`🎬  ${eventData.categories[2]}`} />
         </ScrollView>
         <View style={styles.buttonsContainer}>
-          <Pressable style={styles.calanderButton}>
+          <Pressable onPress={saveEvent} style={styles.calanderButton}>
             <Calendar />
           </Pressable>
           <TouchableOpacity style={styles.button}>
@@ -87,20 +96,33 @@ const EventDetailsDesign = () => {
           </TouchableOpacity>
         </View>
         <Title mt={mvs(20)} title={'Date & Time'} />
-        <Text style={styles.date}>
-          {'Wed, Mar 29 - Mar 30  •  19:00 - 20:00'}
-        </Text>
+        <DateRangePicker
+          onChange={setDates}
+          startDate={moment(startDate)}
+          endDate={moment(endDate)}
+          minDate={minDate}
+          maxDate={maxDate}
+          range
+          displayedDate={displayedDate}
+        >
+          <Text style={styles.date}>
+            {`${moment(startDate).format('ddd, MMM DD')} - ${moment(
+              endDate
+            ).format('MMM DD')}  •  ${eventData?.eventStartTime} - ${
+              eventData?.eventEndTime
+            }`}
+          </Text>
+        </DateRangePicker>
         <Title mt={mvs(31)} title={'Location'} />
-        <Text
-          style={
-            styles.location
-          }>{`Museum of Natural History University Of Oxford,  Pitt Rivers Museum OX1 3PP`}</Text>
+        <Text style={styles.location}>{eventData?.address?.address}</Text>
         <Pressable style={styles.directionContainer}>
           <Direction />
-          <Text style={styles.direction}>{'Get directions'}</Text>
+          <Text style={styles.direction} onPress={openLocation}>
+            {'Get directions'}
+          </Text>
         </Pressable>
         <Title mt={mvs(20)} title={'Organised by'} />
-        <Organiser />
+        <Organiser title={eventData?.organiser} />
       </View>
     </ScrollView>
   );

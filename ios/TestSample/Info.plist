@@ -43,13 +43,15 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>UISupportedInterfaceOrientations</key>
+	<key>UIAppFonts</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>PassengerSans-Bold.otf</string>
+		<string>PassengerSans-Regular.otf</string>
+		<string>PassengerSans-Medium.otf</string>
+		<string>PassengerSans-Light.otf</string>
 	</array>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
 </dict>
 </plist>

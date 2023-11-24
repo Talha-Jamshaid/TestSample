@@ -5,12 +5,12 @@ import {mvs} from '../config/metrices';
 import Colors from '../config/colors';
 
 // create a component
-const Organiser = () => {
+const Organiser = ({title}:any) => {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer} />
       <View style={styles.mainContainer}>
-        <Text style={styles.title}>{'Oxford Women in\nBusiness'}</Text>
+        <Text style={styles.title}>{title}</Text>
         <TouchableOpacity style={styles.button}>
             <Text style={styles.text}>Follow</Text>
         </TouchableOpacity>
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     fontSize: mvs(18),
     fontFamily: 'PassengerSans-Regular',
     color: Colors.heading,
+    width:mvs(150),
   },
   button: {
     justifyContent:"center",

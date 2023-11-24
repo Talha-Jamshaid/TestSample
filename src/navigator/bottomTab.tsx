@@ -20,8 +20,9 @@ const Tabs = () => {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {
-          backgroundColor: 'black',
-          height: mvs(94),
+          backgroundColor: '#000',
+          height: mvs(70),
+          borderTopWidth: 0
         },
       }}>
       <Tab.Screen

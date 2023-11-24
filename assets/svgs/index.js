@@ -12,4 +12,3 @@ export {default as Heart} from './heart-rounded.svg';
 export {default as Label} from './Label.svg';
 export {default as Sport} from './Sport.svg';
 export {default as Movie} from './Movie.svg';
-export {default as Shadow} from './shadow.svg';

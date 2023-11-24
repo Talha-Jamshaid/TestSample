@@ -1,5 +1,5 @@
 //import liraries
-import React, {Component, useState} from 'react';
+import React, { Component, useState } from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,7 @@ import {
   TouchableOpacity,
   Linking,
 } from 'react-native';
-import {mvs} from '../../config/metrices';
+import { mvs } from '../../config/metrices';
 import Colors from '../../config/colors';
 import Title from '../../components/title';
 import Tag from '../../components/tag';
@@ -26,7 +26,7 @@ import Read from '../../components/read';
 import LinearGradient from 'react-native-linear-gradient';
 import Category from '../../components/category';
 import Organiser from '../../components/organiser';
-import {styles} from './styles';
+import { styles } from './styles';
 import AttendeesCounter from '../../components/attendees';
 //@ts-ignore
 import DateRangePicker from 'react-native-daterange-picker';
@@ -83,9 +83,9 @@ const EventDetailsDesign = ({
           horizontal
           showsHorizontalScrollIndicator={false}
         >
-          <Category title={`🎻  ${eventData.categories[0]}`} />
-          <Category title={`⚽️  ${eventData.categories[1]}`} />
-          <Category title={`🎬  ${eventData.categories[2]}`} />
+          {eventData?.categories.map((item: any, index: any) => (
+            <Category title={`${item.name}`} key={index} />
+          ))}
         </ScrollView>
         <View style={styles.buttonsContainer}>
           <Pressable onPress={saveEvent} style={styles.calanderButton}>

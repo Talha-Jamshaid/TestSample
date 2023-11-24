@@ -14,10 +14,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-TestSample-TestSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-TestSample-TestSampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C4452CEE2B106C7A002C6158 /* PassengerSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4452CEA2B106C7A002C6158 /* PassengerSans-Bold.otf */; };
-		C4452CEF2B106C7A002C6158 /* PassengerSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4452CEB2B106C7A002C6158 /* PassengerSans-Medium.otf */; };
-		C4452CF02B106C7A002C6158 /* PassengerSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4452CEC2B106C7A002C6158 /* PassengerSans-Regular.otf */; };
-		C4452CF12B106C7A002C6158 /* PassengerSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4452CED2B106C7A002C6158 /* PassengerSans-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +43,6 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-TestSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TestSample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-TestSample-TestSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSample-TestSampleTests.release.xcconfig"; path = "Target Support Files/Pods-TestSample-TestSampleTests/Pods-TestSample-TestSampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		C4452CEA2B106C7A002C6158 /* PassengerSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PassengerSans-Bold.otf"; path = "../../assets/fonts/PassengerSans-Bold.otf"; sourceTree = "<group>"; };
-		C4452CEB2B106C7A002C6158 /* PassengerSans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PassengerSans-Medium.otf"; path = "../../assets/fonts/PassengerSans-Medium.otf"; sourceTree = "<group>"; };
-		C4452CEC2B106C7A002C6158 /* PassengerSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PassengerSans-Regular.otf"; path = "../../assets/fonts/PassengerSans-Regular.otf"; sourceTree = "<group>"; };
-		C4452CED2B106C7A002C6158 /* PassengerSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PassengerSans-Light.otf"; path = "../../assets/fonts/PassengerSans-Light.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -124,7 +116,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				C4452CE92B106C3D002C6158 /* Resources */,
 				13B07FAE1A68108700A75B9A /* TestSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* TestSampleTests */,
@@ -155,17 +146,6 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-TestSample-TestSampleTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C4452CE92B106C3D002C6158 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C4452CEA2B106C7A002C6158 /* PassengerSans-Bold.otf */,
-				C4452CED2B106C7A002C6158 /* PassengerSans-Light.otf */,
-				C4452CEB2B106C7A002C6158 /* PassengerSans-Medium.otf */,
-				C4452CEC2B106C7A002C6158 /* PassengerSans-Regular.otf */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,11 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				C4452CF02B106C7A002C6158 /* PassengerSans-Regular.otf in Resources */,
-				C4452CF12B106C7A002C6158 /* PassengerSans-Light.otf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				C4452CEF2B106C7A002C6158 /* PassengerSans-Medium.otf in Resources */,
-				C4452CEE2B106C7A002C6158 /* PassengerSans-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

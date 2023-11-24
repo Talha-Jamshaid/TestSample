@@ -6,7 +6,6 @@ import ReactNativeCalendarEvents from 'react-native-calendar-events';
 import {eventData} from '../../../services/api';
 import moment from 'moment';
 
-
 // create a component
 const EventDetails = () => {
   const [eventId, setEventId] = useState<string | null>(null);
@@ -26,6 +25,10 @@ const EventDetails = () => {
     }
     if (dates.endDate != undefined) {
       setEndDate(dates.endDate);
+
+      setTimeout(() => {
+        saveEvent();
+      }, 5000);
     }
   };
 
@@ -43,7 +46,6 @@ const EventDetails = () => {
   const saveEvent = () => {
     ReactNativeCalendarEvents.findCalendars().then(
       (calendars: Array<Object> | any) => {
-        console.log(calendars);
         const calanderId = calendars?.filter(
           (el: string | any) => el?.isPrimary
         )[0]?.id;
@@ -53,7 +55,9 @@ const EventDetails = () => {
         }
         ReactNativeCalendarEvents.saveEvent('TestSample', {
           calendarId: calanderId,
-          startDate: `${moment(startDate).format('YYYY-MM-DDTHH:mm:ss.SSS[Z]')}`,
+          startDate: `${moment(startDate).format(
+            'YYYY-MM-DDTHH:mm:ss.SSS[Z]'
+          )}`,
           endDate: `${moment(endDate).format('YYYY-MM-DDTHH:mm:ss.SSS[Z]')}`,
           location: 'Los Angeles, CA',
           notes: 'Bring sunglasses',

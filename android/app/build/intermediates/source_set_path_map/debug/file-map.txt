@@ -38,8 +38,10 @@ com.testsample.app-mergeDebugResources-36 /Users/asim/Documents/ShayanSolutions/
 com.testsample.app-merged_res-37 /Users/asim/Documents/ShayanSolutions/TestSample/android/app/build/intermediates/merged_res/debug
 com.testsample.app-debug-38 /Users/asim/Documents/ShayanSolutions/TestSample/android/app/src/debug/res
 com.testsample.app-main-39 /Users/asim/Documents/ShayanSolutions/TestSample/android/app/src/main/res
-com.testsample.app-packaged_res-40 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-gesture-handler/android/build/intermediates/packaged_res/debug
-com.testsample.app-packaged_res-41 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
-com.testsample.app-packaged_res-42 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
-com.testsample.app-packaged_res-43 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-svg/android/build/intermediates/packaged_res/debug
-com.testsample.app-packaged_res-44 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug
+com.testsample.app-packaged_res-40 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-calendar-events/android/build/intermediates/packaged_res/debug
+com.testsample.app-packaged_res-41 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-gesture-handler/android/build/intermediates/packaged_res/debug
+com.testsample.app-packaged_res-42 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-linear-gradient/android/build/intermediates/packaged_res/debug
+com.testsample.app-packaged_res-43 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
+com.testsample.app-packaged_res-44 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
+com.testsample.app-packaged_res-45 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-svg/android/build/intermediates/packaged_res/debug
+com.testsample.app-packaged_res-46 /Users/asim/Documents/ShayanSolutions/TestSample/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug

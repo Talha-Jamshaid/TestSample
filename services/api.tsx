@@ -24,7 +24,11 @@ export const eventData = {
         'https://medicosfamilyclinic.com/wp-content/uploads/2020/06/medical-clinic-672x372.jpg',
     },
   ],
-  categories: ['Art &  Music', 'Sport', 'Movie'],
+  categories: [
+    { name: '🎻  Art & Music' },
+    { name: '⚽️  Sport'},
+    { name: '🎬  Movie'},
+  ],
   eventDate: 'Wed, Mar 29 - Mar 30',
   eventStartDate: '2023-11-26',
   eventEndDate: '2023-11-28',

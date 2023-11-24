@@ -1,46 +1,82 @@
 [
     {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.testsample.app-merged_res-37:/drawable-mdpi_assets_images_banner1.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-mdpi/assets_images_banner1.png"
     },
     {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.testsample.app-merged_res-37:/drawable-mdpi_node_modules_reactnativedaterangepicker_src_assets_chevronr.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-mdpi/node_modules_reactnativedaterangepicker_src_assets_chevronr.png"
     },
     {
         "merged": "com.testsample.app-merged_res-37:/drawable_rn_edit_text_material.xml.flat",
         "source": "com.testsample.app-main-39:/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "com.testsample.app-merged_res-37:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.testsample.app-main-39:/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.testsample.app-merged_res-37:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.testsample.app-merged_res-37:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.testsample.app-merged_res-37:/drawable-mdpi_node_modules_reactnativedaterangepicker_src_assets_chevronl.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-mdpi/node_modules_reactnativedaterangepicker_src_assets_chevronl.png"
+    },
+    {
+        "merged": "com.testsample.app-merged_res-37:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.testsample.app-merged_res-37:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.testsample.app-merged_res-37:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.testsample.app-merged_res-37:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.testsample.app-main-39:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-merged_res-37:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/asim/.gradle/daemon/8.0.1/com.testsample.app-main-39:/mipmap-hdpi/ic_launcher_round.png"
     }
 ]

@@ -88,7 +88,7 @@ const EventDetailsDesign = ({
           ))}
         </ScrollView>
         <View style={styles.buttonsContainer}>
-          <Pressable onPress={saveEvent} style={styles.calanderButton}>
+          <Pressable onPress={() => saveEvent(endDate)} style={styles.calanderButton}>
             <Calendar />
           </Pressable>
           <TouchableOpacity style={styles.button}>

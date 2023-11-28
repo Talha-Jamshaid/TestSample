@@ -24,6 +24,10 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+  <key>NSCalendarsUsageDescription</key>
+  <string>This app requires access to the calendar</string>
+  <key>NSCalendarsFullAccessUsageDescription</key>
+  <string>This app requires access to the calendar</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -49,7 +53,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PassengerSans-Regular.otf</string>
+		<string>PassengerSans-Light.otf</string>
+		<string>PassengerSans-Medium.otf</string>
+		<string>PassengerSans-Bold.otf</string>
+	</array>
 </dict>
 </plist>

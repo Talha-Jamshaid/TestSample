@@ -9,8 +9,12 @@ import moment from 'moment';
 // create a component
 const EventDetails = () => {
   const [eventId, setEventId] = useState<string | null>(null);
-  const [startDate, setStartDate] = useState(moment(eventData?.eventStartDate));
-  const [endDate, setEndDate] = useState(moment(eventData?.eventEndDate));
+  const [startDate, setStartDate] = useState<string | any>(
+    moment(eventData?.eventStartDate)
+  );
+  const [endDate, setEndDate] = useState<string | any>(
+    moment(eventData?.eventEndDate)
+  );
 
   const [displayedDate, setDisplayedDate] = useState(moment());
   const minDate = moment(new Date());
@@ -18,6 +22,7 @@ const EventDetails = () => {
 
   const setDates = (dates: any) => {
     if (dates.startDate != undefined) {
+      setEndDate(null);
       setStartDate(dates.startDate);
     }
     if (dates.displayedDate != undefined) {
@@ -27,7 +32,7 @@ const EventDetails = () => {
       setEndDate(dates.endDate);
 
       setTimeout(() => {
-        saveEvent();
+        saveEvent(dates.endDate);
       }, 5000);
     }
   };
@@ -43,13 +48,12 @@ const EventDetails = () => {
       });
   };
 
-  const saveEvent = () => {
+  const saveEvent = (endDate: any) => {
     ReactNativeCalendarEvents.findCalendars().then(
       (calendars: Array<Object> | any) => {
         const calanderId = calendars?.filter(
           (el: string | any) => el?.isPrimary
-        )[0]?.id;
-        console.log(calanderId);
+        )[0]?.id
         if (eventId) {
           ReactNativeCalendarEvents.removeEvent(eventId, {});
         }

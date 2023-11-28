@@ -9,7 +9,9 @@ import {
   UserProfile,
 } from '../../assets/svgs';
 import EventDetails from '../screens/eventDetails';
-import { mvs } from '../config/metrices';
+import {mvs} from '../config/metrices';
+import {View} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,9 +24,10 @@ const Tabs = () => {
         tabBarStyle: {
           backgroundColor: '#000',
           height: mvs(70),
-          borderTopWidth: 0
+          borderTopWidth: 0,
         },
-      }}>
+      }}
+    >
       <Tab.Screen
         name="Location"
         component={EventDetails}
